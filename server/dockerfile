@@ -1,0 +1,8 @@
+FROM node:21.6.0
+
+RUN mkdir /server
+COPY . /server
+WORKDIR /server/
+RUN npm install
+EXPOSE 3001
+CMD [ "npm", "dev" ]

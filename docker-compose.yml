@@ -1,0 +1,17 @@
+version: "3.8"
+
+services:
+  client:
+    build: ./client
+    ports:
+      - 8080:3000
+    environment:
+        REACT_APP_BASE_URL: http://localhost:8081
+  server:
+    build: ./server
+    ports:
+      - 8081:3001
+    environment:
+      MONGO_URL: "mongodb+srv://AselaMongoDB:FxT1mVVO6qVA101a@aselapasindu.xvnnlzi.mongodb.net/?retryWrites=true&w=majority"
+      PORT: 3001
+    

@@ -20,7 +20,7 @@ import AffiliateStat from "./models/AffiliateStat.js";
 import { dataUser, dataProduct, dataProductStat, dataTransaction, dataOverallStat, dataAffiliateStat } from "./data/index.js";
 
 // CONFIGURATION
-dotenv.config();
+// dotenv.config();
 const app = express();
 app.use(express.json());
 app.use(helmet());
