@@ -1,0 +1,9 @@
+tasks:
+  - name: client-npm-install
+    init: |
+      cd /workspace/fullstack-admin-mern/client
+      npm install
+  - name: server-npm-install
+    init: |
+      cd /workspace/fullstack-admin-mern/server
+      npm install
