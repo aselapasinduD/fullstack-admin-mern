@@ -7,8 +7,3 @@ tasks:
     init: |
       cd /workspace/fullstack-admin-mern/server
       npm install
-  - name: run_docker_compose
-    init: |
-      cd /workspace/fullstack-admin-mern
-      docker compose build -d
-      docker compose up
