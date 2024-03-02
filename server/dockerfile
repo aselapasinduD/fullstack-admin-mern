@@ -1,8 +1,14 @@
 FROM node:21.6.0
 
-RUN mkdir /server
-COPY . /server
-WORKDIR /server/
+ENV PORT=3001
+ENV MONGO_URL="mongodb+srv://AselaMongoDB:FxT1mVVO6qVA101a@aselapasindu.xvnnlzi.mongodb.net/?retryWrites=true&w=majority"
+
+WORKDIR /server
+
+COPY . .
+
 RUN npm install
+
 EXPOSE 3001
-CMD [ "npm", "dev" ]
+
+CMD [ "npm", "run", "dev" ]
