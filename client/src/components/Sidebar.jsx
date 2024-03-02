@@ -139,7 +139,7 @@ const Sidebar = ({ user, drawerWidth, isSidebarOpen, setIsSidebarOpen, isNonMobi
                                         variant="h4"
                                         fontWeight="bold"
                                     >
-                                        ECOMVISION
+                                        ADMIN PANEL
                                     </Typography>
                                 </Box>
                                 {!isNonMobile && (
